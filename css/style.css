@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+.color-write{
+    color: #fff;
+}
+header{
+    width: 100%;
+    /*max-height: 700px;*/
+    height: 90vh;
+    background-image: url('../images/capa.png');
+    background-position: center;
+    background-size: cover;
+    padding: 40px 2%;
+}
+.logo{
+    width: 160px;
+    height: 40px;
+    float: left;
+    background-image: url('../images/logo.png');
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.chamada{
+    float: right;
+    margin: 140px 45px;
+    max-width: 500px;
+}
+.chamada h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+.chamada p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+section{
+    background-color: #472562;
+    width: 100%;
+    padding: 20px 2px;
+}
+.text-section{
+    float: left;
+    width: 50%;
+}
+.text-section p{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.text-section ul{
+    list-style-position: inside;
+    font-size: 12px;
+}
+.text-section ul li{
+    width: 100%;
+    float: left;
+}
+.btn{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+.device-section{
+    float: left;
+    width: 50%;
+    height: 300px;
+    background: url('../images/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
