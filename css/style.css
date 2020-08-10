@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -186,7 +186,226 @@ nav li {
 
 .section-two img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    position: relative;
+    top: 70px;
+}
+
+.section-three {
+    width: 100%;
+}
+
+.wrapper-one {
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.nosso-time {
+    width: 50%;
+    float: left;
+    padding: 140px 0 90px 0;
+    background: #835fa7;
+}
+
+.nosso-time h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.nosso-time p {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 35px;
+}
+
+.equipe {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #fff;
+}
+
+.autor {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.nome {
+    float: left;
+    width: 100%;
+}
+
+.nome h2 {
+    padding-right: 20px;
+    font-weight: 400;
+    color: #232323;
+    font-size: 25px;
+}
+
+.wrapper-nome {
+    float: left;
+}
+
+.wrapper-nome p {
+    font-size: 13px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.foto-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url('../images/user.png');
+    background-size: 100% 100%;
+    position: relative;
+    top: -2px;
+}
+
+.texto {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.texto {
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets {
+    float: left;
+    margin-top: 12px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background-color: rgb(200, 200, 200);
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.slider-bullets .selecionado {
+    background-color: #000;
+}
+
+.section-four {
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+.form-contato {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.form-contato h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form-contato p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form input[type=text],
+input[type=email] {
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    margin-top: 5px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+form textarea {
+    width: 90%;
+    max-width: 480px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+    margin-top: 5px;
+}
+
+form input[type=submit] {
+    border-radius: 30px;
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 44px;
+    border: none;
+}
+
+.map-wrapper {
+    float: left;
+    width: 50%;
+}
+
+.map-wrapper h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wrapper-two {
+    width: 100%;
+    padding-top: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.map-wrapper-three {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.map {
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*border: 5px solid #cecece;*/
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: #192123;
+    font-size: 12px;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -224,5 +443,56 @@ nav li {
     }
     .section-two {
         padding: 40px 2%;
+    }
+    .section-four {
+        text-align: center;
+    }
+    .map-wrapper {
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+    }
+    .map-wrapper-three {
+        display: inline-block;
+        max-width: none;
+        width: 80%;
+        padding-top: 80%;
+        margin-top: 10px;
+    }
+    .map-wrapper-two {
+        height: 100%;
+        width: 100%;
+    }
+    .form-contato {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .form-contato p {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .nosso-time {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .equipe {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .section-two img {
+        margin-top: 16px;
+        top: 70px;
+    }
+    footer {
+        text-align: center;
+    }
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+    footer p:nth-of-type(2) {
+        float: none;
+        margin-top: 8px;
     }
 }
