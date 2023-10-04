@@ -5,9 +5,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@width: 100%;
+@height: 100%;
+
+@color-background-primary: #472562;
+@color-text-primary: #fff;
+@color-secundary:  #000;
+
 html,
 body {
-    height: 100%;
+    height: @height;
 }
 
 .container {
@@ -20,11 +27,11 @@ body {
 }
 
 .color-write {
-    color: #fff;
+    color: @color-text-primary;
 }
 
 .color-black {
-    color: #000;
+    color: @color-secundary;
 }
 
 a {
@@ -32,7 +39,7 @@ a {
 }
 
 header {
-    width: 100%;
+    width: @width;
     /*max-height: 700px;*/
     height: 90vh;
     background-image: url('../images/capa.png');
@@ -59,18 +66,18 @@ header {
 
 .mobile-menu ul {
     position: absolute;
-    width: 100%;
-    color: #fff;
+    width: @width;
+    color: @color-text-primary;
     list-style-type: none;
     left: 0;
     top: 80px;
-    background-color: #fff;
+    background-color: @color-text-primary;
     text-align: center;
     display: none;
 }
 
 .mobile-menu ul li {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid @color-secundary;
     display: block;
     padding: 8px 0;
 }
@@ -113,8 +120,8 @@ nav li {
 }
 
 .section-one {
-    background-color: #472562;
-    width: 100%;
+    background-color: @color-background-primary;
+    width: @width;
     padding: 0 2px;
     height: 400px;
 }
@@ -139,7 +146,7 @@ nav li {
 }
 
 .text-section ul li {
-    width: 100%;
+    width: @width;
     float: left;
     margin-top: 8px;
 }
@@ -170,7 +177,7 @@ nav li {
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
-    background-color: #fff;
+    background-color: @color-text-primary;
 }
 
 .section-two h2 {
@@ -185,14 +192,14 @@ nav li {
 }
 
 .section-two img {
-    width: 100%;
+    width: @width;
     margin-top: 30px;
     position: relative;
     top: 70px;
 }
 
 .section-three {
-    width: 100%;
+    width: @width;
 }
 
 .wrapper-one {
@@ -224,7 +231,7 @@ nav li {
     float: left;
     width: 50%;
     padding: 140px 0 90px 0;
-    background-color: #fff;
+    background-color: @color-text-primary;
 }
 
 .autor {
@@ -235,7 +242,7 @@ nav li {
 
 .nome {
     float: left;
-    width: 100%;
+    width: @width;
 }
 
 .nome h2 {
@@ -269,7 +276,7 @@ nav li {
 
 .texto {
     float: left;
-    width: 100%;
+    width: @width;
     margin-top: 20px;
 }
 
@@ -281,7 +288,7 @@ nav li {
 .slider-bullets {
     float: left;
     margin-top: 12px;
-    width: 100%;
+    width: @width;
     padding-left: 30px;
 }
 
@@ -296,7 +303,7 @@ nav li {
 }
 
 .slider-bullets .selecionado {
-    background-color: #000;
+    background-color: @color-secundary;
 }
 
 .section-four {
@@ -352,7 +359,7 @@ form input[type=submit] {
     width: 165px;
     height: 44px;
     font-size: 13px;
-    color: #fff;
+    color: @color-text-primary;
     cursor: pointer;
     margin-top: 15px;
     text-align: center;
@@ -371,7 +378,7 @@ form input[type=submit] {
 }
 
 .map-wrapper-two {
-    width: 100%;
+    width: @width;
     padding-top: 100%;
     position: absolute;
     left: 0;
@@ -379,7 +386,7 @@ form input[type=submit] {
 }
 
 .map-wrapper-three {
-    width: 100%;
+    width: @width;
     max-width: 480px;
     position: relative;
 }
@@ -387,10 +394,10 @@ form input[type=submit] {
 .map {
     left: 0;
     top: 0;
-    background-color: #fff;
+    background-color: @color-text-primary;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: @width;
+    height: @height;
     /*border: 5px solid #cecece;*/
 }
 
@@ -425,7 +432,7 @@ footer p:nth-of-type(2) {
         margin-top: 0;
         position: static;
         text-align: center;
-        width: 100%;
+        width: @width;
     }
     .text-section ul {
         margin: 15px;
@@ -449,7 +456,7 @@ footer p:nth-of-type(2) {
     }
     .map-wrapper {
         float: none;
-        width: 100%;
+        width: @width;
         padding: 0 4%;
     }
     .map-wrapper-three {
@@ -460,11 +467,11 @@ footer p:nth-of-type(2) {
         margin-top: 10px;
     }
     .map-wrapper-two {
-        height: 100%;
-        width: 100%;
+        height: @height;
+        width: @width;
     }
     .form-contato {
-        width: 100%;
+        width: @width;
         margin-bottom: 40px;
     }
     .form-contato p {
@@ -474,11 +481,11 @@ footer p:nth-of-type(2) {
 
 @media screen and (max-width: 580px) {
     .nosso-time {
-        width: 100%;
+        width: @width;
         padding: 40px 0;
     }
     .equipe {
-        width: 100%;
+        width: @width;
         padding: 40px 0;
     }
     .section-two img {
