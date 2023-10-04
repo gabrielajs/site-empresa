@@ -4,7 +4,7 @@
 
 ###### Foi utilizado
 * Html5
-* Css 
+* Less 
 * Responsivo
 
 <img src="https://github.com/gabrielajs/site-empresa/blob/master/images/img.png">
